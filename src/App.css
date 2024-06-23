@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+
+/* Existing styles in App.css */
+
+/* Add these styles at the end */
+/* Styles for the list */
+.quiz-list {
+  list-style-type: none; /* Removes bullets */
+  padding: 0; /* Removes default padding */
+}
+
+/* Styles for each quiz item */
+.quiz-item {
+  display: block; /* Ensures each <li> is on a new line */
+  margin: 5px 0; /* Adds space between <li> elements */
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.quiz-item:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+/* Feedback styles */
+.feedback-correct {
+  color: green;
+  font-weight: bold;
+}
+
+.feedback-wrong {
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+}
